@@ -49,7 +49,7 @@ app.use('/api/events', require('./routes/events'))
 // ESCUCHAR PETICIONES
 
 app.listen(process.env.PORT,
-     console.log('Servidor corriendo en puerto 4000'))
+     console.log(`Servidor corriendo en puerto ${ process.env.PORT }`)
 
 
 
