@@ -1,7 +1,8 @@
+const { response } = require('express')
 const Evento = require('../models/Evento')
 
 
-const getEventos = async(req, res) => {
+const getEventos = async(req, res = response) => {
     
     //guardo eventos en una var y los envio
 
@@ -28,7 +29,7 @@ const crearEvento = async(req, res) => {
 
        const eventoGuardado = await evento.save()
 
-        res.status(201).json({
+        res.json({
             ok:true,
             evento : eventoGuardado
         })
