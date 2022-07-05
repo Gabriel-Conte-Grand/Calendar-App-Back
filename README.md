@@ -2,7 +2,7 @@
 
 # Backend MERN - CALENDAR
 
-Backend created during my React expert course
+Backend created with Node and MongoDB
 
 
 
